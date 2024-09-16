@@ -16,7 +16,6 @@ None.
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-
     nginx_listen_ipv6: true
 
 Whether or not to listen on IPv6 (applied to all vhosts managed by this role).
@@ -61,7 +60,7 @@ Please take note of the indentation in the above block. The first line should be
 
 An example of a secondary vhost which will redirect to the one shown above.
 
-*Note: The `filename` defaults to the first domain in `server_name`, if you have two vhosts with the same domain, eg. a redirect, you need to manually set the `filename` so the second one doesn't override the first one*
+_Note: The `filename` defaults to the first domain in `server_name`, if you have two vhosts with the same domain, eg. a redirect, you need to manually set the `filename` so the second one doesn't override the first one_
 
     nginx_remove_default_vhost: false
 
